@@ -1,0 +1,312 @@
+body {
+    box-sizing: content-box;
+    padding-top: 70px;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #ffccff;
+    height: 100%;
+    min-height: 100%;
+}
+
+h1,
+h3,
+h4 {
+    color: #4aaaa5;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+.navbar-header-style {
+    background: #4aaaa5;
+}
+
+#nav-bar-bg {
+    background: #d6d6c2;
+    border-bottom: 8px solid #4aaaa5;
+}
+
+.navbar-brand-style {
+    text-align: center;
+    width: 230px;
+    font-weight: bolder;
+}
+
+#container {
+    align-self: auto;
+    width: 100%;
+    margin: 5px auto;
+    float: left;
+    margin-top: 48px;
+}
+
+#contact-container {
+    align-self: auto;
+    background: #f5f8f5;
+    width: 100%;
+    margin: 5px auto;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#rowid {
+    padding: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.thumbnail {
+    margin: 0px;
+    border: transparent;
+}
+
+#columnid {
+    background-color: #d98cb3;
+    margin-left: 16px;
+    margin-right: 4px;
+    border: 2px solid #f5f8f5;
+    max-width: 48%;
+}
+
+#fullcolumn {
+    background-color: #d98cb3;
+    margin-left: 15px;
+    margin-right: 4px;
+    border: 2px solid #f5f8f5;
+    max-width: 97%;
+}
+
+.img-responsive {
+    margin-top: 8px;
+}
+
+.image-link {
+    background-color: #d98cb3;
+    width: 20%;
+    height: 18%;
+    float: left;
+    margin-right: 15px;
+}
+
+.app-description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin-top: 178px;
+        width: 100%;
+        float: left;
+    }
+    #contact-container {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        float: left;
+    }
+}
+
+#aboutme-row {
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+#about-me {
+    color: #4aaaa5;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#profile {
+    background-color: #d98cb3;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    padding-bottom: 10px;
+    border: 2px solid #f5f8f5;
+    max-width: 100%;
+}
+
+.profile-img {
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+    width: 280px;
+}
+
+#connect-withme {
+    max-width: 99%;
+    margin-top: 15px;
+    border: 2px solid #f5f8f5;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.connect-text {
+    color: #4aaaa5;
+    font-weight: 700;
+}
+
+#gitcolR #linked-inR {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#linked-inL #stakeoverflowL {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#footer {
+    border-top: solid 8px #4aaaa5;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    height: 50px;
+    padding: 15px;
+}
+
+.navbar-brand-bg {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+.navigation-bar {
+    padding: 0px;
+    height: 70px;
+}
+
+.navigation-links {
+    float: right;
+    margin-right: 20px;
+}
+
+
+/* Portfolio specific */
+
+.portfolio-img {
+    padding-top: 15px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#image-text {
+    float: left;
+    width: 245px;
+}
+
+#row-width {
+    float: left;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+#h3-style {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    bottom: 2px;
+}
+
+#p-style {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    padding: 4px;
+    position: relative;
+    bottom: 55px;
+}
+
+#contact-row {
+    height: 500px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+}
+
+.contact-col {
+    padding-top: 60px;
+    background-color: #d98cb3;
+    margin: 15px;
+    border: 2px solid #f5f8f5;
+    max-width: 98%;
+}
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+textarea#message {
+    height: 150px;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+}
+
+.list {
+    list-style-type: none;
+}
