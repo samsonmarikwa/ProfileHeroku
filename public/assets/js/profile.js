@@ -11,9 +11,9 @@ $(function() {
         location = "/contact";
     });
 
-    // hangman game
+    /* // hangman game
     $("#hangman").on("click", () => {
         location = "/hangman";
     });
-
+ */
 });

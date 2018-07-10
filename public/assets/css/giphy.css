@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+
+/* To make columns in a row assume the height of the tallest column.  */
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.jumboinstr,
+.preset-col,
+.favorite-col {
+    text-align: center;
+    background-color: #d9d9d9;
+    border: 8px solid #ffffff;
+}
+
+.jumboinstr {
+    font-size: 15px;
+    background-color: black;
+    border-style: outset;
+    padding: 5px;
+    color: white;
+}
+
+header {
+    border-bottom: 1px solid #ffffff;
+}
+
+#preset-btns,
+#favorite-gifs,
+#save-favorites {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#preset-btns,
+#save-favorites {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+button {
+    padding: 10px;
+    height: 40px;
+}
+
+#instr {
+    margin-top: 20px;
+}
+
+.input-form {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.imageCls {
+    padding: 5px;
+    height: 150px;
+    width: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#preset-gifs:hover .overlay {
+    opacity: 1;
+}

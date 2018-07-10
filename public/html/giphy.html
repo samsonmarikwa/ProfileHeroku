@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GifTastic - Gif APIs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/giphy.css" />
+    <script type="text/javascript" src="assets/js/giphy.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Gifs APIs</h1>
+        <p>Spice up your life with Gifs</p>
+    </div>
+    <div class="container-fluid">
+        <p class="jumboinstr">Click the Preset Gifs buttons to download gifs. You can add your own button by searching for a politician, fan or any subject and clicking the Submit button. Click on a gif to toggle animate or still. To remove a gif from favorite, you need to
+            have gifs loaded in the Preset Gifs area.</p>
+        <div class="row">
+            <div class="col-sm-7">
+                <form class="input-form">
+                    <strong>Add a politician or your fan</strong><br>
+                    <input type="text" id="addPolitician" size="40" name="politician">
+                    <input type="submit" value="  Submit  " button id="addButton">
+                </form>
+            </div>
+            <div class="col-sm-5" id="instr">
+                <p><strong>Click and drag gifs from Presets to Your Favorites and vice versa</strong></p>
+            </div>
+        </div>
+        <div class="row row-eq-height">
+            <div class="col-sm-7 preset-col">
+                <header>
+                    <h3>Preset Gifs</h3>
+                </header>
+                <div id="preset-btns">
+
+                </div>
+                <div id="preset-gifs" class="draggable">
+
+                </div>
+            </div>
+            <div class="col-sm-5 favorite-col droppable">
+                <header>
+                    <h3>Your Favorites</h3>
+                </header>
+                <div id="save-favorites">
+                    <button id="savefavorites">   Save Your Favorite Gifs   </button>
+                </div>
+                <div id="favorite-gifs" class="droppable draggable favorite">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -29,6 +29,8 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, '../public/html/trivial.html'));
     });
 
-
+    app.get('/giphy', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/html/giphy.html'));
+    });
 
 };
