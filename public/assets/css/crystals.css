@@ -1,0 +1,154 @@
+body {
+    background-image: url("../../assets/imgs/psdgraphics.jpg");
+    box-sizing: content-box;
+}
+
+.hdr-row {
+    background-color: cadetblue;
+    opacity: 0.6;
+    height: 55px;
+}
+
+.crystal-hdr {
+    background-color: chocolate;
+    opacity: 0.8;
+    margin-left: 0px;
+    height: 55px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 315px;
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.instr-row {
+    margin-top: 10px;
+}
+
+.instr {
+    opacity: 0.6;
+    padding: 15px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.random-blk {
+    background-color: green;
+    height: 160px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.random-number {
+    line-height: 80px;
+    height: 80px;
+}
+
+.game-stats-blk {
+    background-color: aqua;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 2px;
+    height: 160px;
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.win-blk {
+    border-bottom: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.loss-blk {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wins,
+.losses {
+    position: relative;
+    float: right;
+    right: 5px;
+}
+
+.score-txt,
+.score {
+    background-color: #009933;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 65px;
+}
+
+.notify {
+    color: #ff0066;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.score-txt {
+    padding-left: 15px;
+    margin: 10px;
+}
+
+.score {
+    margin: 10px;
+    font-size: 120px;
+    font-weight: 700;
+    height: 200px;
+    text-align: center;
+}
+
+footer {
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.image {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    border-style: solid;
+}
+
+.image:hover {
+    border: 5px double green;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+    .random-blk {
+        font-size: 50px;
+    }
+    .game-stats-blk {
+        font-size: 20px;
+    }
+    .score-txt {
+        font-size: 20px;
+    }
+    .win-blk {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        height: 70px;
+    }
+    .loss-blk {
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}

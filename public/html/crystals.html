@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CrystalsCollector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/crystals.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/js/crystals.js"></script>
+
+</head>
+
+<body>
+    <header class="hdr-row">
+        <h1 class="crystal-hdr">CrystalsCollector!</h1>
+    </header>
+
+    <div class="row instr-row">
+        <div class="col-xs-8 col-md-5">
+            <div class="thumbnail instr">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-7"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 col-md-4">
+            <div class="random-blk"></div>
+        </div>
+
+        <div class="col-xs-5 col-md-3">
+            <div class="game-stats-blk">
+                <div class="win-blk">Wins
+                    <div class="wins"></div>
+                </div>
+                <div class="loss-blk">Losses
+                    <div class="losses"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-3 col-md-5"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-5 col-md-5">
+            <div id="imageBtn">
+            </div>
+        </div>
+        <div class="col-xs-3 col-md-3">
+            <div class="notify"></div>
+        </div>
+        <div class="col-xs-4 col-md-4">
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-5">
+            <div class="score-txt">Your total score is</div>
+        </div>
+        <div class="col-xs-6 col-md-7">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-5">
+            <div class="score"></div>
+        </div>
+        <div class="col-xs-6 col-md-7"></div>
+
+    </div>
+
+    <footer class="hdr-row">
+        <p>Samson Marikwa Copyright &copy; 2018 </p>
+    </footer>
+
+</body>
+
+</html>
