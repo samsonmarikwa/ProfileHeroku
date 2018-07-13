@@ -5,9 +5,9 @@ $(document).ready(function() {
             name: $("#name").val().trim(),
             email: $("#email").val().trim(),
             phone: $("#phone").val().trim(),
-            message: $("#message").val().trim()
+            message: $("#message").val().trim(),
+            captcha: $("#g-recaptcha-response").val()
         };
-        console.log(message);
 
         $.ajax("/api/contact", {
             type: "POST",
@@ -15,13 +15,21 @@ $(document).ready(function() {
         }).then(function(response) {
             if (response.success) {
                 swal(
-                    'Sent!',
-                    'Your message has been send.',
+                    response.title,
+                    response.message,
                     'success'
                 );
+
+                // refresh screen
+                $("#name").val("");
+                $("#email").val("");
+                $("#phone").val("");
+                $("#message").val("");
+
             } else {
-                swal('Not Sent!',
-                    'Your message was not sent.\nPlease check your data',
+                swal(
+                    response.title,
+                    response.message,
                     'error');
             }
 

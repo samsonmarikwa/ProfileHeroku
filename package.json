@@ -11,8 +11,10 @@
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.18.3",
+        "dotenv": "^6.0.0",
         "express": "*",
         "nodemailer": "^4.6.7",
-        "path": "*"
+        "path": "*",
+        "request": "^2.87.0"
     }
 }
