@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie|Alegreya+Sans|Droid+Sans">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets\css\styles.css">
 </head>
@@ -20,7 +21,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a id="about" href="/">About</a>
+                    <a id="about" href="/">Bio</a>
                 </li>
                 <li>
                     <a id="portfolio" href="/portfolio">Portfolio</a>
@@ -33,12 +34,10 @@
 
         <div class="row" id="aboutme-row">
             <div class="col-sm-12" id="about-me">
-                <h3>Portfolio</h3>
+                <h3 style="margin-left: 0px">Portfolio</h3>
             </div>
         </div>
     </nav>
-
-    <!-- <div class="container-fluid bg-3 text-center" id="container"> -->
 
     <div class="container-fluid" id="container">
         <div class="row" id="rowid">
@@ -126,31 +125,36 @@
                 <div class="image-link">
                     <figure>
                         <img src="assets\imgs\technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" class="img-responsive">
-                        <figcation><a href="https://samsonmarikwa.github.io/RPS-Multiplayer/" target="_blank">Rutgers Info Wizard</a></figcation>
+                        <figcation><a href="/rps-multiplayer" target="_blank">Rutgers Info Wizard</a></figcation>
                     </figure>
                 </div>
                 <div class="app-description">
-                    <p>This Rock, Paper, Scissors game is a multiplayer game that is played over the internet by two players. It uses the Google Firebase NoSQL Cloud database for persistence and updates to the two players user interfaces. In this application,
-                        Vanilla JavaScript is used for the web page updates. No JQuery is used in this application. The players are given turns to select Rock, Paper or Scissors. The computer will then determine which player won the round and maintain
-                        the statistics of the game. The players can tease each other via chat in the game.
+                    <p>The Rock, Paper, Scissors game is a multiplayer game that is played over the internet by two players. It uses the Google Firebase NoSQL Cloud database for persistence and instantaneous updates to the two players user interfaces. In
+                        this application, Vanilla JavaScript is used for the web page updates. The players are given turns to select Rock, Paper or Scissors options. The computer will then determine which player won the round and maintain the statistics
+                        of the game. The players can tease each other via chat in the game.
                         <br>
-                        <br>Click <a href="https://samsonmarikwa.github.io/RPS-Multiplayer/" target="_blank">here</a> to link to the Rock, Paper or Scissors game.
-                        <br>
+                        <br>Click <a href="/rps-multiplayer" target="_blank">here</a> to play the Rock, Paper or Scissors game. You will need to open another tab in the browser to simulate two players playing the game or you can ask a friend to play against
+                        you.
+                        <br><br>Click <a href="https://github.com/samsonmarikwa/RPS-Multiplayer" target="_blank">Github</a> to access the code.
                     </p>
                 </div>
             </div>
             <div class="col-sm-6" id="columnid">
                 <div class="image-link">
                     <figure>
-                        <img src="assets\imgs\logo.png" alt="Team EICH Project" class="img-responsive">
-                        <figcation><a href="https://samsonmarikwa.github.io/TeamEICH/" target="_blank">Team EICH Project</a></figcation>
+                        <img src="assets\imgs\logo.png" alt="I'm new here" class="img-responsive">
+                        <figcation><a href="/teameich" target="_blank">I'm New Here</a></figcation>
                     </figure>
                 </div>
                 <div class="app-description">
-                    <p>I'm New Here - this app helps a user who is new in a location to find activities to do. This was an app developed by a team of four people with each individual contributing code.
+                    <p>I'm new here is a Team Eich project. We collaborated as a four member team to come up with an idea to help a person who has arrived in a new place and needs to hit the ground running using technology. A user is able to find some activities
+                        to do in the area.<br>You start by entering a city or zipcode. You can also enter a specific address of your current position. A dialog box showing the current weather is displayed on the webpage and from there you will be able
+                        to determine if you can have outdoor activities. You can then click the red icon which brings yet another dialog where you can specify the distance you want to travel from your current position to get to the activity place and
+                        the type of activities. Once you select these, you can then click the Submit button which displays a map. At this point, you are in google maps and you can then interact with google maps to check on your route, pictures of the
+                        area you intend to go and a google view scenery.
                         <br>
-                        <br>Click <a href="https://samsonmarikwa.github.io/TeamEICH/" target="_blank">here</a> to link to the Team EICH Project.
-                        <br>
+                        <br>Click <a href="/teameich" target="_blank">here</a> to access the application.
+                        <br><br>Click <a href="https://github.com/samsonmarikwa/TeamEICH" target="_blank">Github</a> to access the code.
                     </p>
                 </div>
             </div>
@@ -169,7 +173,7 @@
                         20 tweets, you can ask it to display information on any song or movie. These instructions to Liri can also be supplied via a text file, random.txt.<br><br>In Liri, the objective is to showcase the power of the npm ecosystem. We
                         are not required to reinvent the wheel, if someone has shared a brilliant solution through npm, we can use that solution in our code. Please refer to the package.json to see the module dependencies.
                         <br>
-                        <br>Click <a href="https://github.com/samsonmarikwa/liri-node-app/blob/master/README.md" target="_blank">here</a> to read through the Readme.md file if you want to use Liri.
+                        <br>Click <a href="https://github.com/samsonmarikwa/liri-node-app/blob/master/README.md" target="_blank">Github readme</a> to read through the Readme.md on how to download and setup Liri on your computer.
                         <br>
                     </p>
                 </div>
@@ -190,7 +194,7 @@
                         is available for sale, inventory below minimum level and allows the manager to add new products and replenish stocks. The bamazonSupervisor allows a supervisor to get a report on sales and to create new departments. All records
                         created are saved in the bamazon MySQL database.
                         <br>Click <a href="https://github.com/samsonmarikwa/bamazon" target="_blank">here</a> to access the Bamazon Storefront github.
-                        <br>Click <a href="https://drive.google.com/drive/folders/1AvKI0r8PcrNBCIans32TF9Znfu0pP-Ht?usp=sharing" target="_blank">here</a> to watch a demo video of the Bamazon Storefront.
+                        <br>Click <a href="https://drive.google.com/drive/folders/1AvKI0r8PcrNBCIans32TF9Znfu0pP-Ht?usp=sharing" target="_blank">here</a> to watch a demo videos of the Bamazon Storefront.
                         <br>
                     </p>
                 </div>
@@ -208,8 +212,9 @@
                 <div class="app-description">
                     <p>Friend Finder is an web-based application that allows a user to answer questions in a survey and then matches that person to another person registered in the application as a best match for a friend. Friend Finder uses an algorithm
                         to find differences between the person taking a survey to those already registered. It will then retrieve a picture and name of the person with the least difference.<br><br>Currently, the application saves data in an array of objects
-                        with each object having an array of scores. There is no persisistence right now as the main focus of the application was on developing API on the server to respond to front-end website requests. An Express server with Body-Parser
-                        as middleware, path npm modules have been used in the development of this application. Please click <a href="https://gentle-plains-62498.herokuapp.com/" target="_blank">here</a> to use Friend Finder which is deployed on Heroku.
+                        with each object having an array of scores. There is no persistence right now as the main focus of the application was on developing an API on the server to respond to front-end website requests. An Express server with bodyparser
+                        as middleware and path npm modules have been used in the development of this application.<br> Please click <a href="https://gentle-plains-62498.herokuapp.com/" target="_blank">here</a> to use Friend Finder which is deployed on
+                        Heroku.
                         <br>
                         <br>Click <a href="https://github.com/samsonmarikwa/FriendFinder/blob/master/README.md" target="_blank">here</a> to read through the Readme.md file if you want to download the code and run the application on your local machine.
                         <br>
@@ -225,10 +230,10 @@
                 </div>
                 <div class="app-description">
                     <p>Eat-Da-Burger is a cloud-based restaurant application that lets users input burgers they would like to eat. On clicking the Submit button, the burger is saved to a database. The burger is displayed on the web-page in the Available
-                        section. If the user clicks the Devout It button which is next to the burger, the burger is moved to the Devoured section..</p>
+                        section. If the user clicks the Devour It button which is next to the burger, the burger is moved to the Devoured section.</p>
                     <p>The application uses Express web server, Handlebars templating engine with partials displaying the Available and Devoured sections. A MySQL database is used for persistence. Ajax is used to communicate from the front-end to the backend
                         APIs. The application coding is structured following the MVC model. I have developed an ORM framework to interact with the database. The objective of developing the ORM is to have an understanding of the underlying design of the
-                        existing ORM Frameworks on the market such as Sequelize.. Click <a href="https://glacial-fjord-45128.herokuapp.com/" target="_blank">Eat-Da-Burger</a> to use the application deployed on Heroku.
+                        existing ORM Frameworks on the market such as Sequelize.<br>Click <a href="https://glacial-fjord-45128.herokuapp.com/" target="_blank">Eat-Da-Burger</a> to use the application deployed on Heroku.
                         <br>
                         <br>Click <a href="https://github.com/samsonmarikwa/burger" target="_blank">Github</a> to access the code and follow the Readme instructions to clone and run the application on your local machine.
                         <br>

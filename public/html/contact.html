@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie|Alegreya+Sans|Droid+Sans">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets\css\styles.css">
 </head>
@@ -20,7 +21,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a id="about" href="/">About</a>
+                    <a id="about" href="/">Bio</a>
                 </li>
                 <li>
                     <a id="portfolio" href="/portfolio">Portfolio</a>
@@ -40,29 +41,35 @@
 
     <div class="container-fluid" id="container">
         <div class="row" id="contact-row">
-            <div class="col-sm-12 contact-col">
+            <div class="col-sm-12">
 
                 <form id="contact-form">
+                    <br>
                     <ul class="list">
                         <li>
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Joe Bloggs" required="required">
+                            <input type="text" id="name" name="name" placeholder="Title, Firstname Lastname" required="required">
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                            <input type="email" id="email" name="email" placeholder="your email address" required="required">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="phone" id="phone" name="phone" placeholder="your phone number">
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" required="required"></textarea>
+                            <textarea id="message" name="message" placeholder="message" required="required"></textarea>
                         </li>
                     </ul>
-                    <input type="submit">
+                    <br><br><br>
+                    <button type="submit" class="btn button submit">Send</button>
+                    <br><br>
                 </form>
             </div>
         </div>
     </div>
-
     <div class="row" id="connect-withme">
         <!-- Connect with me block with nested rows-->
         <div class="row">
@@ -76,19 +83,19 @@
             <div class="col-sm-1" id="gitcolR">
                 <!-- github link -->
                 <a href="https://github.com/samsonmarikwa">
-                    <img src="assets\imgs\github.jpg" alt="github" padding="0" border="0" width="50" height="50">
+                    <img src="assets\imgs\github.jpg" alt="github" padding="0" border="0" width="40" height="40">
                 </a>
             </div>
             <div class="col-sm-1" id="linked-inR" id="linked-inL">
                 <!-- Linked-in link -->
                 <a href="https://www.linkedin.com/in/samson-marikwa-b6729219/">
-                    <img src="assets\imgs\Linked-in.jpg" alt="Linked-in" padding="0" border="0" width="50" height="50">
+                    <img src="assets\imgs\Linked-in.jpg" alt="Linked-in" padding="0" border="0" width="40" height="40">
                 </a>
             </div>
             <div class="col-sm-1" id="stakeoverflowL">
                 <!-- Stak Overflow -->
                 <a href="https://stackoverflow.com/users/9297340/samson-marikwa?tab=profile">
-                    <img src="assets\imgs\Stackoverflow.jpg" alt="Stack Overflow" padding="0" border="0" width="50" height="50">
+                    <img src="assets\imgs\Stackoverflow.jpg" alt="Stack Overflow" padding="0" border="0" width="40" height="40">
                 </a>
             </div>
             <!-- 9 blank columns to make them 12 column spans-->
@@ -111,13 +118,22 @@
             <div class="col-sm-1">
             </div>
         </div>
+
     </div>
+
 
     <div class="row" id="footer">
         <div class="col-sm-12">
             <p class="copyright">&#169Copyright 2018 Samson Marikwa</p>
         </div>
     </div>
+
+
+    <!-- =============================================================================== -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/contact.js"></script>
 
 </body>
 

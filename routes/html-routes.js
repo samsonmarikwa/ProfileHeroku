@@ -33,4 +33,11 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, '../public/html/giphy.html'));
     });
 
+    app.get('/rps-multiplayer', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/html/rps-multiplayer.html'));
+    });
+
+    app.get('/teameich', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/html/teameich.html'));
+    });
 };

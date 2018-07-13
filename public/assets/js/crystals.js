@@ -5,15 +5,18 @@ $(document).ready(function() {
     var losses = 0;
 
     // audio clips
-    var clappingAudio = new Audio("assets/soundclip/AudienceClapping.mp3");
+    var clappingAudio = new Audio("assets/soundclip/Click2.wav");
     var disappointedAudio = new Audio("assets/soundclip/DisappointedCrowd.mp3");
-    var upliftMusic = new Audio("assets/soundclip/UpliftingBackgroundMusic.mp3");
-
+    var upliftMusic = new Audio("assets/soundclip/Happytune.wav");
+    var clickSound = new Audio("assets/soundclip/Click6.wav");
+    var click1Sound = new Audio("assets/soundclip/Click5.wav");
+    var click2Sound = new Audio("assets/soundclip/Click3.wav");
+    var click3Sound = new Audio("assets/soundclip/Click4.wav");
+    var click4Sound = new Audio("assets/soundclip/Click6.aiff");
 
     /* var btns = $("body").find("#imageBtn"); This statement can also be used to traverse the
     DOM tree to find the specified descendant of the selector preceding the .find() */
     var btns = $("#imageBtn");
-
 
     var randomNum = 0;
     var numOfCrystals = 4; // number of images known as 4.
@@ -58,6 +61,38 @@ $(document).ready(function() {
      * if there is a win or loss and restarts the game.
      */
     btns.on("click", ".image", function() {
+        upliftMusic.pause();
+        console.log($(this).attr('crystal-num'));
+
+        switch ($(this).attr('crystal-num')) {
+            case '1':
+                {
+                    clickSound.play();
+                    break;
+                }
+            case '2':
+                {
+                    click1Sound.play();
+                    break;
+                }
+            case '3':
+                {
+                    click2Sound.play();
+                    break;
+                }
+            case '4':
+                {
+                    click3Sound.play();
+                    break;
+                }
+            default:
+                {
+                    click4Sound.play();
+                    break;
+                }
+        }
+
+
         var crystalRandomVal = $(this).attr('crystal-random-num'); // read random value
         console.log(crystalRandomVal);
 
@@ -66,7 +101,7 @@ $(document).ready(function() {
 
         // test for win or loss and display the stats
         if (score === randomNum) {
-            upliftMusic.pause();
+            clickSound.pause();
             clappingAudio.play();
             wins++; // increment wins counter
             displayUINumbers("W", wins);
@@ -75,7 +110,7 @@ $(document).ready(function() {
             setTimeout(main, 5000); // restart game in 5 secs
         } else {
             if (score > randomNum) {
-                upliftMusic.pause();
+                clickSound.pause();
                 disappointedAudio.play();
 
                 losses++; // increment losses counter
@@ -85,6 +120,7 @@ $(document).ready(function() {
                 setTimeout(main, 5000); // restart game in 5 secs
             }
         }
+        upliftMusic.play();
     });
 
     /*
@@ -114,6 +150,9 @@ $(document).ready(function() {
 
             // assign a random number value to an attribute crystal-random-num
             crystalImg.attr("crystal-random-num", generateRandomNum(1, 12));
+
+            // assign a number value to an attribute crystal-num
+            crystalImg.attr("crystal-num", x);
 
             // Add the image attribute to the web page.
             btns.append(crystalImg);

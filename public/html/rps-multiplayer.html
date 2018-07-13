@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/rps-multiplayer.css" />
+    <script src="assets/js/rps-multiplayer.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="jumbo-hdr">Rock Paper Scissors Game</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="player-identity">Name: </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="player-info">Please enter your name and click Start</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="player1Div">
+                    <p id="player1" class="player">Player 1</p>
+                    <ul>
+                        <li><a href="#" id="pl1R">Rock</a></li>
+                        <li><a href="#" id="pl1P">Paper</a></li>
+                        <li><a href="#" id="pl1S">Scissors</a></li>
+                    </ul>
+                    <p>Wins: <span id="pl1-win">0</span> Losses: <span id="pl1-losses">0</span></p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div id="game-result">Game Result</div>
+            </div>
+
+            <div class="col-sm-4">
+                <div id="player2Div">
+                    <p id="player2" class="player">Player 2</p>
+                    <ul>
+                        <li><a href="#" id="pl2R">Rock</a></li>
+                        <li><a href="#" id="pl2P">Paper</a></li>
+                        <li><a href="#" id="pl2S">Scissors</a></li>
+                    </ul>
+                    <p>Wins: <span id="pl2-win">0</span> Losses: <span id="pl2-losses">0</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="chat-display">
+                        <textarea readonly id="message-display"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="chat-message">
+                        <div id="chat-message">
+                            <textarea id="message" placeholder="Type something here to tease the other player!!"></textarea>
+                        </div>
+                        <div class="send-button">
+                            <button type="button" id="msg-btn" class="btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+        <div class="col-sm-12">
+            <p class="copyright">&#169Copyright 2018 Samson Marikwa</p>
+        </div>
+    </div>
+</body>
+
+</html>

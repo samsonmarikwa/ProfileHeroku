@@ -10,7 +10,9 @@
     "author": "Samson",
     "license": "ISC",
     "dependencies": {
+        "body-parser": "^1.18.3",
         "express": "*",
+        "nodemailer": "^4.6.7",
         "path": "*"
     }
 }

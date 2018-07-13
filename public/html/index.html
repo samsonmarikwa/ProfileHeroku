@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie|Alegreya+Sans|Droid+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
@@ -26,7 +27,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a id="about" href="/">About</a>
+                    <a id="about" href="/">Bio</a>
                 </li>
                 <li>
                     <a id="portfolio" href="/portfolio">Portfolio</a>
@@ -39,34 +40,45 @@
 
         <div class="row" id="aboutme-row">
             <div class="col-sm-12" id="about-me">
-                <h3 style="margin-left: 0px">About Me</h3>
+                <h3 style="margin-left: 0px">Bio</h3>
             </div>
         </div>
     </nav>
 
     <div class="container-fluid" id="container">
         <div class="row" id="profile">
-            <img class="profile-img" src="assets\imgs\Headshot2.jpg" alt="Samson">
-
-            <p>I am a detail-oriented Web Application Architect keen on eliminating waste in resources through process automation and low-cost ubiquitous technology. I am customer-centric, without a happy customer we have no business being here. My desired
-                achievement in any project is to have a product that provides an aesthetic interface that has the impact of engaging the customer. The website should speak to the customer as to the quality of products and services at his or her disposal
-                as it provides the first and continuous point of contact between our company and the customer. The customer should be able to access products and services from our organization without travelling to or calling our offices. That should
-                enhance productivity both sides in that the customer can transact at any place and time of their choice and we as an organization, our resources are freed to concentrate on developing our products and services to meet the ever growing
-                demands of our clients.<br>
-                <br>My skills and experiences enable me to take up the role of a full stack web developer.</p>
+            <div>
+                <div class="figure">
+                    <figure>
+                        <img class="profile-img" src="assets\imgs\Headshot2.jpg" alt="Samson">
+                        <figcation class="figcap">"Everyone should learn to program a computer because it teaches you how to think"<br>- Steve Jobs</figcation>
+                    </figure>
+                </div>
+                <p>I am a passionate developer who started off as a COBOL programmer in a mainframe environment. I am now into web (cloud) application development. In between these roles, I moved into systems administration supporting a network of about
+                    a 100 users in a Windows environment. In that role, I continued to write small programs in Clipper to extract data from the main systems to generate special reports. After that, I moved into application software implementation setting
+                    up Infor FMS SunSystems to address business requirements in financials and order fulfilment. In this role, there were occasions when I had to write programs in Java to enable interfaces to other systems.</p>
+                <p>My expertise is in the MERN web application development framework.
+                </p>
+                <p>I am a detail-oriented architect keen on maximizing productivity through aggressive automation. I always want to explore an opportunity to computerize a process to increase productivity and let machines work for humankind.</p>
+                <p>The internet has brought so much opportunities to enhance productivity in that the client can transact at any place and time of their choice and as organizations, resources are redeployed to develop further products and services to meet
+                    the ever growing needs of clients.</p>
+                <p>My expertise and experience enable me to take up the role of a full stack web developer.</p>
+            </div>
         </div>
-        <div class="row" id="skills">
-            <div class="col-sm-6" id="columnid">
-                <h2>Technical Skills</h2>
-                <h2>Front-end Web Technology</h2>
+
+        <div class="row row-eq-height" id="skills">
+            <div class="col-sm-6" id="column">
+                <h2 class="skills-hdr">Technical Skills</h2>
+                <h3>Front-end Web Technology</h3>
                 <ul>
                     <li>HTML 5</li>
                     <li>CSS 3</li>
                     <li>Javascript</li>
                     <li>JQuery</li>
                     <li>Bootstrap</li>
+                    <li>React</li>
                 </ul>
-                <h2>Back-end Web Technology</h2>
+                <h3>Back-end Web Technology</h3>
                 <ul>
                     <li>NodeJS</li>
                     <li>Express Web Server</li>
@@ -74,27 +86,30 @@
                     <li>Google Firebase</li>
                     <li>MySQL</li>
                     <li>Sequelize ORM Framework</li>
-                    <li>GitHub code management</li>
+                    <li>MongoDb</li>
+                    <li>Mongoose</li>
                 </ul>
+                <p>I am able to learn any library or web framework not listed above</p>
             </div>
-            <div class="col-sm-6" id="columnid">
-                <h2>Business Skills</h2>
-                <p>I have carried out systems implementations at various client sites using Infor SunSystems covering the full implementation life cycle</p>
+            <div class="col-sm-6" id="column">
+                <h2 class="skills-hdr">Business Skills</h2>
+                <p>I have carried out systems implementations at various client sites using Infor SunSystems covering the full implementation life cycle from user requirements gathering to go-live. I have addressed financials and order fulfilment requirements
+                    in banks, insurance, government, forestry, tea estates, brokerage and Not for profit organizations.</p>
                 <ul>
-                    <li>Order Fulfilment (O2C and P2P)</li>
+                    <li><strong>Order Fulfilment (O2C and P2P)</strong></li>
                     <ul>
                         <li>Purchase management</li>
                         <li>Inventory Management</li>
                         <li>Landed Costing</li>
                         <li>Sales Management</li>
                     </ul>
-                    <li>Financials</li>
+                    <li><strong>Financials</strong></li>
                     <ul>
                         <li>Ledger Accounting - Unified Ledger concept</li>
                         <li>Asset Register</li>
                         <li>Multi-currency processing</li>
                     </ul>
-                    <li>Reporting</li>
+                    <li><strong>Reporting</strong></li>
                     <ul>
                         <li>SQL Reporting Services</li>
                         <li>Vision XL</li>
@@ -103,22 +118,37 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12" id="fullcolumn">
-                <h2>Soft Skills</h2>
-                <p>On the side of soft skills, although I can work alone, I am much happier working as part of a team bouncing off ideas with other team members.<br> I communicate well with other peers and I am able to sustain professional relationships.
-                    I can hold workshops on topics as a means to educate or elicit requirements for system development.
-                    <br><br>My motivation is to see people thriving and deriving benefit from systems that leverage technological advances to carry out their activities easily, be they business or personal such as how GPS navigation has become indispensable
-                    for today’s traveller.
-
-                    <br>
-                    <br><br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </p>
+        <div class="row" id="fullcolumn">
+            <div class="col-sm-12">
+                <h2 class="skills-hdr">Soft Skills</h2>
+                <ul>
+                    <li><strong>Teamwork</strong>
+                        <p>I prefer working in a team bouncing off ideas with other team members though I am able to work alone.</p>
+                    </li>
+                    <li><strong>Communication</strong>
+                        <p>I communicate well with co-workers and at any level of the management team.</p>
+                    </li>
+                    <li><strong>Highly motivated</strong>
+                        <p>My motivation is to see efficiency, increase in profitability and finding ways to make processes uncomplicated. An example is how GPS navigation has become indispensable for today’s traveller in the ever growing complexity of road
+                            networks.
+                        </p>
+                    </li>
+                    <li><strong>Persistence</strong>
+                        <p>I believe in pursuing a good idea to fruition within budget and allocated time in spite of difficulties or resistance.</p>
+                    </li>
+                    <li><strong>Professional relationships</strong>
+                        <p>Ability to build and sustain professional congenial relationships with co-workers and clients.</p>
+                    </li>
+                    <li><strong>Learning</strong>
+                        <p>Always eager to learn new technologies to add to my knowlegde and skills.</p>
+                    </li>
+                    <li><strong>Customer-centric</strong>
+                        <p>Always eager to ensure the client's requirements have been fully addressed and the client is happy. I like feeback whether bad or good from customers, peers and seniors so as to improve my methods.
+                        </p>
+                    </li>
+                </ul>
+                <br>
+                <br>
             </div>
         </div>
         <div class="row" id="connect-withme">
@@ -134,19 +164,19 @@
                 <div class="col-sm-1" id="gitcolR">
                     <!-- github link -->
                     <a href="https://github.com/samsonmarikwa">
-                        <img src="assets\imgs\github.jpg" alt="github" padding="0" border="0" width="50" height="50">
+                        <img src="assets\imgs\github.jpg" alt="github" padding="0" border="0" width="40" height="40">
                     </a>
                 </div>
                 <div class="col-sm-1" id="linked-inR" id="linked-inL">
                     <!-- Linked-in link -->
                     <a href="https://www.linkedin.com/in/samson-marikwa-b6729219/">
-                        <img src="assets\imgs\Linked-in.jpg" alt="Linked-in" padding="0" border="0" width="50" height="50">
+                        <img src="assets\imgs\Linked-in.jpg" alt="Linked-in" padding="0" border="0" width="40" height="40">
                     </a>
                 </div>
                 <div class="col-sm-1" id="stakeoverflowL">
                     <!-- Stak Overflow -->
                     <a href="https://stackoverflow.com/users/9297340/samson-marikwa?tab=profile">
-                        <img src="assets\imgs\Stackoverflow.jpg" alt="Stack Overflow" padding="0" border="0" width="50" height="50">
+                        <img src="assets\imgs\Stackoverflow.jpg" alt="Stack Overflow" padding="0" border="0" width="40" height="40">
                     </a>
                 </div>
                 <!-- 9 blank columns to make them 12 column spans-->
@@ -172,12 +202,12 @@
 
         </div>
 
-    </div>
-    <div class="row" id="footer">
-        <div class="col-sm-12">
-            <p class="copyright">&#169Copyright 2018 Samson Marikwa</p>
+
+        <div class="row" id="footer">
+            <div class="col-sm-12">
+                <p class="copyright">&#169Copyright 2018 Samson Marikwa</p>
+            </div>
         </div>
-    </div>
     </div>
 
 </body>
